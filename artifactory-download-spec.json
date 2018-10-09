@@ -1,0 +1,28 @@
+{
+  "files": [{
+    "pattern": "atlas-local-snapshots/com/ibm/atlas/atlas-server/*.war",
+    "target": "pax-workspace/content/wlp/usr/servers/Atlas/apps/atlas-server.war",
+    "flat": "true",
+    "build": "explorer-server"
+  }, {
+    "pattern": "zlux-applications/explorer-mvs/*.war",
+    "target": "pax-workspace/content/wlp/usr/servers/Atlas/apps/explorer-mvs.war",
+    "flat": "true",
+    "build": "explorer-mvs :: master"
+  }, {
+    "pattern": "zlux-applications/explorer-uss/*.war",
+    "target": "pax-workspace/content/wlp/usr/servers/Atlas/apps/explorer-uss.war",
+    "flat": "true",
+    "build": "explorer-uss :: master"
+  }, {
+    "pattern": "zlux-applications/explorer-jes/*.war",
+    "target": "pax-workspace/content/wlp/usr/servers/Atlas/apps/explorer-jes.war",
+    "flat": "true",
+    "build": "explorer-jes :: master"
+  }, {
+    "pattern": "atlas-local-snapshots/com/ibm/atlas/atlas-wlp-package/wlp-embeddable-zos-17.0.0.2.zip",
+    "target": "pax-workspace/",
+    "flat": "true",
+    "explode": "true"
+  }]
+}

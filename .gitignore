@@ -1,0 +1,20 @@
+/target/**
+.factorypath
+.jazzignore
+.history
+
+# logs
+*.log
+
+# zip files
+*.pax
+*.zip
+
+# Mac files
+.DS_Store
+
+# workspace content should be updated by program
+pax-workspace/*
+!pax-workspace/.keep
+!pax-workspace/pre-packaging.sh
+!pax-workspace/post-packaging.sh

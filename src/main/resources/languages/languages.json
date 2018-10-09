@@ -1,0 +1,18 @@
+{
+    "orion.Rexx": {
+        "id": "text/rexxcontext",
+        "extension": ["rexx"],
+        "dsn": ["**REXX","*REXX*"],
+        "name": "Rexx",
+        "extends": "text/plain",
+        "definitions":"languages/rexx.json"
+    },
+    "orion.JCL": {
+        "id": "text/jclcontext",
+        "extension": ["jcl"],
+        "dsn": ["**JCL","*JCL"],
+        "name": "JCL",
+        "extends": "text/plain",
+        "definitions":"languages/jcl.json"
+    } 
+}

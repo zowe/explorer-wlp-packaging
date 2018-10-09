@@ -1,0 +1,6 @@
+{
+  "files": [{
+    "pattern": "atlas-wlp-package-*.zip",
+    "target": "atlas-local-snapshots/com/ibm/atlas/atlas-wlp-package/{ARTIFACTORY_VERSION}-{RELEASE_IDENTIFIER}/"
+  }]
+}
