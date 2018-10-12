@@ -5,7 +5,7 @@
         "dsn": ["**REXX","*REXX*"],
         "name": "Rexx",
         "extends": "text/plain",
-        "definitions":"languages/rexx.json"
+        "definitions":"explorer-languages/orion/rexx.json"
     },
     "orion.JCL": {
         "id": "text/jclcontext",
@@ -13,6 +13,6 @@
         "dsn": ["**JCL","*JCL"],
         "name": "JCL",
         "extends": "text/plain",
-        "definitions":"languages/jcl.json"
+        "definitions":"explorer-languages/orion/jcl.json"
     } 
 }

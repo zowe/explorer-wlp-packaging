@@ -105,9 +105,9 @@
 								<resource>
 									<directory>${project.basedir}/src/main/resources/languages</directory>
 									<includes>
-										<include>languages.json</include>
-										<include>jcl.json</include>
-										<include>rexx.json</include>
+										<include>orion/languages.json</include>
+										<include>orion/jcl.json</include>
+										<include>orion/rexx.json</include>
 									</includes>
 								</resource>
 							</resources>
