@@ -102,7 +102,7 @@ node ('jenkins-slave') {
       }
 
       // prepare folder
-      sh 'mkdir -p pax-workspace/content/wlp/usr/servers/Atlas/apps/languages.war'
+      sh 'mkdir -p pax-workspace/content/wlp/usr/servers/Atlas/apps/languages.war/orion'
       // we didn't run "server create Atlas" because we will put files in /wlp/usr/servers/Atlas folder directly
       // so we manually create this directory which will be required by zoe installation
       sh 'mkdir -p pax-workspace/content/wlp/usr/servers/.classCache/javasharedresources'
@@ -112,7 +112,7 @@ node ('jenkins-slave') {
       // copy-atlas-server-languages
       //sh 'jar cvfM pax-workspace/content/wlp/usr/servers/Atlas/apps/languages.war -C src/main/resources/languages/ .'
       // languages.war is a directory
-      sh 'cp src/main/resources/languages/* pax-workspace/content/wlp/usr/servers/Atlas/apps/languages.war/'
+      sh 'cp src/main/resources/languages/orion/* pax-workspace/content/wlp/usr/servers/Atlas/apps/languages.war/orion'
       // keep empty folders
       // file should not be hidden from chmod command, which may cause failure
       sh 'touch pax-workspace/content/wlp/usr/servers/.classCache/javasharedresources/keep'
