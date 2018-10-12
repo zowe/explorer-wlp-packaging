@@ -100,7 +100,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${wlpRuntimeTempDir}/wlp/usr/servers/Atlas/dropins/languages.war</outputDirectory>
+							<outputDirectory>${wlpRuntimeTempDir}/wlp/usr/servers/Atlas/apps/languages.war</outputDirectory>
 							<resources>
 								<resource>
 									<directory>${project.basedir}/src/main/resources/languages</directory>
