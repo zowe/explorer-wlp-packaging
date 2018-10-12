@@ -100,14 +100,14 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${wlpRuntimeTempDir}/wlp/usr/servers/Atlas/dropins/languages.war</outputDirectory>
+							<outputDirectory>${wlpRuntimeTempDir}/wlp/usr/servers/Atlas/apps/languages.war</outputDirectory>
 							<resources>
 								<resource>
 									<directory>${project.basedir}/src/main/resources/languages</directory>
 									<includes>
-										<include>languages.json</include>
-										<include>jcl.json</include>
-										<include>rexx.json</include>
+										<include>orion/languages.json</include>
+										<include>orion/jcl.json</include>
+										<include>orion/rexx.json</include>
 									</includes>
 								</resource>
 							</resources>
