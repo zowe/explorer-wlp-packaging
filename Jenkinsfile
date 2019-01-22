@@ -22,11 +22,11 @@ opts.push(buildDiscarder(logRotator(numToKeepStr: (isPullRequest ? '' : '20'))))
 // disable concurrent build
 opts.push(disableConcurrentBuilds())
 // set upstream triggers
-if (env.BRANCH_NAME == 'master') {
-  opts.push(pipelineTriggers([
-    upstream(threshold: 'SUCCESS', upstreamProjects: '/explorer-server-tests,/explorer-jes/master,/explorer-mvs/master,/explorer-uss/master')
-  ]))
-}
+// if (env.BRANCH_NAME == 'master') {
+//   opts.push(pipelineTriggers([
+//     upstream(threshold: 'SUCCESS', upstreamProjects: '/explorer-server-tests,/explorer-jes/master,/explorer-mvs/master,/explorer-uss/master')
+//   ]))
+// }
 
 // define custom build parameters
 def customParameters = []
